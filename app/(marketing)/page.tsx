@@ -3,7 +3,7 @@ import Navbar from "./navbar/navbar";
 
 const MarketingPage = () => { 
   return (
-    <div>
+    <div className="min-h-full flex flex-col">
       <Navbar />
       <LandingPage />
     </div>
