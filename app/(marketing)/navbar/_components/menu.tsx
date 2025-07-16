@@ -59,7 +59,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuListItems() {
   return (
-    <NavigationMenu className="hidden lg:flex relative left-5">
+    <NavigationMenu className="hidden lg:flex relative items-center justify-center left-20">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Product</NavigationMenuTrigger>
