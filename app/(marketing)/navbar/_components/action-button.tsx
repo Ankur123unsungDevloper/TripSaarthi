@@ -21,21 +21,6 @@ const ActionButton = () => {
   return (
     <div className="pr-2">
       <div className="items-center justify-center flex">
-        <div className="flex xl:space-x-4">
-          <Button variant="ghost">
-            <Link href="/contact-sales" className="hidden lg:flex items-center"
-            >
-              Request a demo
-            </Link>
-          </Button>
-          <div className="w-[1px] h-[20px] m-[0 10px] bg-gray-200 relative top-[10px] right-2 hidden lg:flex"></div>
-        </div>
-        <div className="flex lg:space-x-4 items-center justify-center pr-4">
-          <Button variant="ghost" size="sm" className="hidden lg:flex border-none text-md" asChild>
-            <Link href="/sign-in">
-              Log in
-            </Link>
-          </Button>
           <Button
             size="sm"
             className="hidden lg:flex text-center items-center justify-center h-[30px] w-[130px] p-2"
@@ -48,7 +33,6 @@ const ActionButton = () => {
               Plan My Trip
             </Link>
           </Button>
-        </div>
       </div>
       
       {isDropdownVisible && (
