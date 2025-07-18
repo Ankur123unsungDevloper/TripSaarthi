@@ -1,7 +1,7 @@
 "use client";
 
 import { Logo } from "@/components/logo";
-// import { NavigationMenuListItems } from "./_components/menu";
+import { NavigationMenuListItems } from "./_components/menu";
 import { cn } from "@/lib/utils";
 import { useScrollTop } from "@/hooks/use-Scroll-Top";
 import ActionButton from "./_components/action-button";
@@ -15,7 +15,7 @@ const Navbar = () => {
       scrolled && "border-b shadow-2xl"
     )}>
       <Logo />
-        {/* <NavigationMenuListItems /> */}
+        <NavigationMenuListItems />
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2 relative left-[5px]">
         <ActionButton />
       </div>

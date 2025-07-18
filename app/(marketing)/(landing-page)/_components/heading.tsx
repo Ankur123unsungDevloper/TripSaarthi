@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+
 import Link from "next/link";
 
 const Heading = () => {
@@ -11,7 +12,7 @@ const Heading = () => {
       }}
     >
       {/* Content */}
-      <div className="relative z-10 max-w-6xl h-full space-y-4 text-white text-center">
+      <div className="relative z-10 w-full h-full space-y-4 text-white text-center px-30">
         <div className="space-y-4 max-w-3xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-20">
             Discover. Plan. Book. Travel <br />
@@ -23,14 +24,11 @@ const Heading = () => {
           </h3>
         </div>
 
-        <div className="flex justify-center gap-4 pt-4">
-          <Button asChild>
-            <Link href="/signin">Plan My Trip</Link>
-          </Button>
-          <Button variant="ghost" className="hover:underline text-white" asChild>
-            <Link href="/contact-sales">
-              Request a demo
-              <ArrowRight className="h-4 w-4 ml-2" strokeWidth={3} />
+        <div className="flex justify-end gap-4 pt-4">
+          <Button size="lg" asChild className="ml-10 bg-[#5B2C6F] text-white hover:bg-[#4A235A] ">
+            <Link href="/signin">
+              Plan My Trip
+              <ArrowRight className="h-4 w-4 ml-2 hover:underline" strokeWidth={3} />
             </Link>
           </Button>
         </div>
