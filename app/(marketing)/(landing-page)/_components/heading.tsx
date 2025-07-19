@@ -25,10 +25,10 @@ const Heading = () => {
         </div>
 
         <div className="flex justify-end gap-4 pt-4">
-          <Button size="lg" asChild className="ml-10 bg-[#5B2C6F] text-white hover:bg-[#4A235A] ">
+          <Button size="xl" asChild className="ml-10 bg-[#5B2C6F] text-white hover:bg-[#4A235A]">
             <Link href="/signin">
               Plan My Trip
-              <ArrowRight className="h-4 w-4 ml-2 hover:underline" strokeWidth={3} />
+              <ArrowRight className="h-4 w-4 ml-2" strokeWidth={3} />
             </Link>
           </Button>
         </div>
