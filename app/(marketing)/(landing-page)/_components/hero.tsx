@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col h-200 relative bg-[#000] text-white w-full">
+    <div className="flex flex-col h-200 relative w-full">
       {/* Heading + Arrows */}
       <div className="flex flex-row gap-0 items-center justify-between px-20 w-full h-40">
         <div className="flex flex-col items-start justify-center gap-2 h-30 w-120">
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
 
       {/* Cardslider */}
-      <div className="relative w-full mt-[150px] mx-auto bottom-30 text-[#000]">
+      <div className="relative w-full h-full mt-[150px] mx-auto bottom-30 text-[#333]">
         <CardSlider ref={sliderRef} />
       </div>
     </div>
