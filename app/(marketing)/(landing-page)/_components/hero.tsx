@@ -26,11 +26,11 @@ const Hero = () => {
         <div className="flex flex-row w-20 h-20 items-center justify-center gap-2 relative right-10">
           <BsArrowLeftSquare
             onClick={handlePrev}
-            className="h-10 w-10 cursor-pointer hover:h-12 hover:w-12 hover:text-[#4A235A] transition duration-500"
+            className="h-10 w-10 cursor-pointer text-gray-700 transform transition-transform duration-300 hover:scale-110 hover:text-[#4A235A]"
           />
           <BsArrowRightSquare
             onClick={handleNext}
-            className="h-10 w-10 cursor-pointer hover:h-12 hover:w-12 hover:text-[#4A235A] transition duration-500"
+            className="h-10 w-10 cursor-pointer text-gray-700 transform transition-transform duration-300 hover:scale-110 hover:text-[#4A235A]"
           />
         </div>
       </div>
