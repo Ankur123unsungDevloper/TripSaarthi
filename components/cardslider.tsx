@@ -167,7 +167,7 @@ const CardSlider = forwardRef<SplideRef>((_props, ref) => {
               {/* Top-left title */}
               <div className="absolute top-3 left-3 z-20 p-2 rounded-md backdrop-blur-md bg-white/20 text-white shadow-md">
                 <h3 className="font-bold text-base leading-tight max-w-100">{card.title}</h3>
-                <p className="absolute -bottom-7 text-sm opacity-90 p-1 rounded-md backdrop-blur-md bg-white/20">{card.label}</p>
+                <p className="absolute left-0.5 -bottom-7 text-sm opacity-90 p-1 rounded-md backdrop-blur-md bg-white/20">{card.label}</p>
               </div>
 
               {/* Bottom-left users */}
