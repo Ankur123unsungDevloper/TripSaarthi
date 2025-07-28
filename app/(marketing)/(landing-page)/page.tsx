@@ -1,5 +1,6 @@
 import Heading from "./_components/heading";
 import Hero from "./_components/hero";
+import IgnoreTools from "./_components/ignoretools";
 import Partner from "./_components/partner";
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
         <Heading />
         <Hero />
         <Partner />
+        <IgnoreTools />
       </div>
     </div>
   );

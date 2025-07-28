@@ -3,20 +3,20 @@ import Link from "next/link";
 import { PiArrowRight } from "react-icons/pi";
 
 const logos = [
-  {image: '/logos/logoipsum-222.svg'},
-  {image: '/logos/logoipsum-231.svg'},
-  {image: '/logos/logoipsum-244.svg'},
-  {image: '/logos/logoipsum-250.svg'},
-  {image: '/logos/logoipsum-256.svg'},
-  {image: '/logos/logoipsum-257.svg'},
-  {image: '/logos/logoipsum-260.svg'},
-  {image: '/logos/logoipsum-285.svg'},
-  {image: '/logos/logoipsum-288.svg'},
-  {image: '/logos/logoipsum-297.svg'},
-  {image: '/logos/logoipsum-300.svg'},
-  {image: '/logos/logoipsum-317.svg'},
-  {image: '/logos/logoipsum-323.svg'},
-  {image: '/logos/logoipsum-325.svg'},
+  {image: '/logo/IRCTC-logo.svg'},
+  {image: '/logo/indigo-logo.svg'},
+  {image: '/logo/bookingdotcom-logo.svg'},
+  {image: '/logo/logoipsum-250.svg'},
+  {image: '/logo/logoipsum-256.svg'},
+  {image: '/logo/logoipsum-257.svg'},
+  {image: '/logo/logoipsum-260.svg'},
+  {image: '/logo/logoipsum-285.svg'},
+  {image: '/logo/logoipsum-288.svg'},
+  {image: '/logo/logoipsum-297.svg'},
+  {image: '/logo/logoipsum-300.svg'},
+  {image: '/logo/logoipsum-317.svg'},
+  {image: '/logo/logoipsum-323.svg'},
+  {image: '/logo/logoipsum-325.svg'},
 ]
 
 const Partner = () => {
@@ -37,15 +37,15 @@ const Partner = () => {
         </Link>
       </div>
       {
-        <div className="grid grid-cols-3 xl:grid-cols-7 items-center justify-center px-10 md:px-20 lg:px-0 lg:w-1/2 pt-10 gap-10 text-center mx-auto">
+        <div className="grid grid-cols-3 xl:grid-cols-7 items-center justify-center px-10 md:px-20 lg:px-0 lg:w-245 pt-10 gap-10 text-center mx-auto">
           {logos.map((logo, index) => (
             <div key={index}>
               <Image
                 src={logo.image}
                 alt=""
-                width={1500}
-                height={1500}
-                className="w-48"
+                width={2000}
+                height={2000}
+                className="w-50"
               />
             </div>
           ))}
