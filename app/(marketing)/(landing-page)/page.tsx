@@ -1,3 +1,4 @@
+import Feature from "./_components/feature";
 import Heading from "./_components/heading";
 import Hero from "./_components/hero";
 import IgnoreTools from "./_components/ignoretools";
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <Hero />
         <Partner />
         <IgnoreTools />
+        <Feature />
       </div>
     </div>
   );
