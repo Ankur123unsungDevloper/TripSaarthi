@@ -1,6 +1,7 @@
 import Feature from "./_components/feature";
 import Heading from "./_components/heading";
 import Hero from "./_components/hero";
+import Heroine from "./_components/heroine";
 import IgnoreTools from "./_components/ignoretools";
 import Partner from "./_components/partner";
 import Services from "./_components/services";
@@ -17,6 +18,7 @@ const LandingPage = () => {
         <Feature />
         <Services />
         <Testimonial />
+        <Heroine />
       </div>
     </div>
   );

@@ -27,10 +27,10 @@ const servicesData = [
     image: "/services/car.jpg",
   },
   {
-    title: "Torist Guides",
+    title: "Tourist Guides",
     description:
       "Connect with knowledgeable guides to enhance your travel experience.",
-    image: "/services/torist.jpg",
+    image: "/services/tourist.jpg",
   },
 ];
 
