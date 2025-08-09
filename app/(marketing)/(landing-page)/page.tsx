@@ -4,6 +4,7 @@ import Hero from "./_components/hero";
 import IgnoreTools from "./_components/ignoretools";
 import Partner from "./_components/partner";
 import Services from "./_components/services";
+import Testimonial from "./_components/testimonal";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <IgnoreTools />
         <Feature />
         <Services />
+        <Testimonial />
       </div>
     </div>
   );
