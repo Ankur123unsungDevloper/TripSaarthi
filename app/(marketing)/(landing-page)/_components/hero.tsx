@@ -20,7 +20,7 @@ const Hero = () => {
     <div className="flex flex-col h-200 relative w-full">
       {/* Heading + Arrows */}
       <div className="flex flex-row gap-0 items-center justify-between px-20 w-full h-40">
-        <div className="flex flex-col items-start justify-center gap-2 h-30 w-120">
+        <div className="flex flex-col items-start justify-center gap-2 h-30 w-132">
           <h2 className="text-5xl">Upcoming departures</h2>
         </div>
         <div className="flex flex-row w-20 h-20 items-center justify-center gap-2 relative right-10">

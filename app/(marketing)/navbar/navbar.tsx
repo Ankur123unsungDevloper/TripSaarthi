@@ -15,7 +15,7 @@ const Navbar = () => {
       scrolled && "border-b shadow-2xl"
     )}>
       <Logo />
-        <NavigationMenuListItems />
+      <NavigationMenuListItems />
       <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2 relative left-[5px]">
         <ActionButton />
       </div>

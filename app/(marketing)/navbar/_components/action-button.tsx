@@ -23,7 +23,7 @@ const ActionButton = () => {
       <div className="items-center justify-center flex">
           <Button
             size="sm"
-            className="hidden lg:flex text-center items-center justify-center h-[30px] w-[130px] p-2"
+            className="hidden lg:flex text-center items-center justify-center h-[30px] w-[130px] p-2 bg-[#5B2C6F] hover:bg-[#4A235A]"
             asChild
           >
             <Link

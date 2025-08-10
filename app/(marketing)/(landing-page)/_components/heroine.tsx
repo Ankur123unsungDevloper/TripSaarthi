@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Heroine = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-8 bg-gray-300 w-full">
+    <div className="flex flex-col items-center justify-center text-center p-8 bg-gray-300 w-full h-100">
       <div className="max-w-2xl">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Plan Your Next Adventure?
