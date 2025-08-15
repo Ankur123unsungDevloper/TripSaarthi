@@ -4,21 +4,28 @@ import Link from "next/link";
 import { PiArrowRight } from "react-icons/pi";
 
 const logos = [
-  {image: '/logo/IRCTC-logo.svg'},
-  {image: '/logo/indigo-logo.svg'},
-  {image: '/logo/bookingdotcom-logo.svg'},
-  {image: '/logo/airbnb-logo.svg'},
-  {image: '/logo/makemytrip-logo.svg'},
-  {image: '/logo/google-travel-logo.svg'},
-  {image: '/logo/airasia-logo.svg'},
-  {image: '/logo/airindia-logo.svg'},
-  {image: '/logo/akasaair-logo.svg'},
-  {image: '/logo/logoipsum-297.svg'},
-  {image: '/logo/logoipsum-300.svg'},
-  {image: '/logo/logoipsum-317.svg'},
-  {image: '/logo/logoipsum-323.svg'},
-  {image: '/logo/logoipsum-325.svg'},
-]
+  // Airlines
+  { image: "/logo/airindia-logo.svg" },
+  { image: "/logo/indigo-logo.svg" },
+  { image: "/logo/vistara-logo.svg" },
+  { image: "/logo/akasaair-logo.svg" },
+  { image: "/logo/airasia-logo.svg" },
+  { image: "/logo/spicejet-logo.svg" },
+
+  // Travel Booking Platforms
+  { image: "/logo/makemytrip-logo.svg" },
+  { image: "/logo/goibibo-logo.svg" },
+  { image: "/logo/easemytrip-logo.svg" },
+  { image: "/logo/irctc-logo.svg" },
+
+  // Hotel Booking
+  { image: "/logo/bookingdotcom-logo.svg" },
+  { image: "/logo/airbnb-logo.svg" },
+  { image: "/logo/oyorooms-logo.svg" },
+
+  // International/Google
+  { image: "/logo/google-travel-logo.svg" },
+];
 
 const Partner = () => {
   return ( 
