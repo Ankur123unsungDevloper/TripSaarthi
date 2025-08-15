@@ -14,7 +14,7 @@ const Heroine = () => {
       </div>
       <Button
         size="lg"
-        className="bg-[#5B2C6F] text-white text-2xl hover:bg-[#4A235A] transition-colors w-80 rounded-3xl p-2"
+        className="bg-[#5B2C6F] text-white text-xl hover:bg-[#4A235A] transition-colors w-70 rounded-3xl h-12"
       >
         <Link href="/signin">
           Start Planning Today
