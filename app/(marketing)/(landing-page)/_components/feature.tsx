@@ -1,29 +1,30 @@
-import { BsCompassFill } from "react-icons/bs";
-import { SlCalender } from "react-icons/sl";
-import { FaLightbulb, FaSyncAlt } from "react-icons/fa";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
+
+import { useEffect, useState } from "react";
 
 const featuresData = [
   {
-    icon: <BsCompassFill size={32} className="text-primary" />,
+    iconName: "system-alt-2", // Compass/System
     title: "Seamless Itinerary",
     description:
       "Craft your perfect trip with drag-and-drop ease for flights, hotels, and activities.",
   },
   {
-    icon: <SlCalender size={32} className="text-primary" />,
+    iconName: "calendar-check", // Calendar
     title: "Smart Planning",
     description:
       "Effortlessly manage your bookings in one place, with instant updates and notifications.",
   },
   {
-    icon: <FaLightbulb size={32} className="text-primary" />,
+    iconName: "bulb", // Lightbulb
     title: "Smart Recommendations",
     description:
       "Discover personalized travel suggestions tailored to your preferences.",
   },
   {
-    icon: <FaSyncAlt size={32} className="text-primary" />,
-    title: "Real-time Updates",
+    iconName: "sync", // Real-time Updates
+    title: "Stay Updated",
     description:
       "Stay informed with live flight statuses, gate changes, and weather alerts.",
   },
@@ -38,10 +39,19 @@ const Feature = () => {
         {featuresData.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className={`
+              relative flex flex-col items-center bg-white p-6 rounded-xl shadow-lg 
+              transition-shadow duration-300 ease-in-out
+              hover:shadow-xl
+            `}
           >
-            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-              {feature.icon}
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4 overflow-hidden group">
+              <lord-icon
+                src={`https://cdn.lordicon.com/${feature.iconName}.json`}
+                trigger="hover"
+                colors="primary:#5c43f7,secondary:#5c43f7"
+                style={{ width: "64px", height: "64px" }}
+              />
             </div>
             <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
             <p className="text-sm text-gray-600">{feature.description}</p>

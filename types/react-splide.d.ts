@@ -1,4 +1,6 @@
 // types/react-splide.d.ts
+
+// The existing Splide module declarations
 declare module '@splidejs/react-splide' {
   import * as React from 'react';
   import type { Options, Splide as SplideInstance } from '@splidejs/splide';
