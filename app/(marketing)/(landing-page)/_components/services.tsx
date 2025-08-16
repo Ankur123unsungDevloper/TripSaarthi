@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const servicesData = [
   {
@@ -7,30 +8,35 @@ const servicesData = [
     description:
       "Find and book the best flights tailored to your schedule and budget.",
     image: "/services/flight.jpg",
+    link: "/services/flights", // Add the link
   },
   {
     title: "Hotel Reservations",
     description:
       "Discover and reserve top-rated hotels at competitive prices.",
     image: "/services/hotel.jpg",
+    link: "/services/hotels", // Add the link
   },
   {
     title: "Activity Planning",
     description:
       "Organize and schedule activities to make the most of your trip.",
     image: "/services/trip.jpg",
+    link: "/services/activities", // Add the link
   },
   {
     title: "Car Rentals",
     description:
       "Rent vehicles with ease for convenient travel during your stay.",
     image: "/services/car.jpg",
+    link: "/services/rentals", // Add the link
   },
   {
     title: "Tourist Guides",
     description:
       "Connect with knowledgeable guides to enhance your travel experience.",
     image: "/services/tourist.jpg",
+    link: "/services/guides", // Add the link
   },
 ];
 
@@ -64,7 +70,9 @@ const Services = () => {
                 variant="outline"
                 className="mt-5 w-full hover:bg-primary hover:text-white transition-colors duration-300"
               >
-                Learn More
+                <Link href={service.link}>
+                  Learn More
+                </Link>
               </Button>
             </div>
           </div>
