@@ -38,6 +38,13 @@ const servicesData = [
     image: "/services/tourist.jpg",
     link: "/services/guides", // Add the link
   },
+  {
+    title: "AI Holiday Planner",
+    description:
+      "Let our AI assistant plan your ideal trip with personalized recommendations.",
+    image: "/services/ai.jpg",
+    link: "/services/ai",
+  },
 ];
 
 const Services = () => {
