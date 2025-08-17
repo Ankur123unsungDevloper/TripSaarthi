@@ -26,7 +26,7 @@ const Heading = () => {
 
         <div className="flex justify-end gap-4 pt-4">
           <Button size="xl" asChild className="ml-10 bg-[#5B2C6F] text-white hover:bg-[#4A235A]">
-            <Link href="/signin">
+            <Link href="/sign-in">
               Plan My Trip
               <ArrowRight className="h-4 w-4 ml-2" strokeWidth={3} />
             </Link>
