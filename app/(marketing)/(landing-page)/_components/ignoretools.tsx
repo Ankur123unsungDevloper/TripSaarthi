@@ -47,7 +47,7 @@ const IgnoreTools = () => {
   }, [inView]);
 
   return (
-    <div className="flex flex-row items-center justify-between py-16 px-6 w-full">
+    <div className="flex flex-row items-center justify-between py-16 px-6 w-full mb-30">
       <div className="flex flex-col items-center justify-center w-500">
         <video
           ref={videoRef}

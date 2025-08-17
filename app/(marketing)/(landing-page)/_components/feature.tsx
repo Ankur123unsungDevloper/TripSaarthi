@@ -21,7 +21,7 @@ const iconVariants = {
 
 const featuresData = [
   {
-    icon: <MapIcon className="w-8 h-8 text-primary" />,
+    icon: <MapIcon className="w-8 h-8 text-green-600" />,
     title: "Seamless Itinerary",
     description:
       "Craft your perfect trip with drag-and-drop ease for flights, hotels, and activities.",
@@ -33,13 +33,13 @@ const featuresData = [
       "Effortlessly manage your bookings in one place, with instant updates and notifications.",
   },
   {
-    icon: <LightBulbIcon className="w-8 h-8 text-primary" />,
+    icon: <LightBulbIcon className="w-8 h-8 text-yellow-400" />,
     title: "Smart Recommendations",
     description:
       "Discover personalized travel suggestions tailored to your preferences.",
   },
   {
-    icon: <ArrowPathIcon className="w-8 h-8 text-primary" />,
+    icon: <ArrowPathIcon className="w-8 h-8 text-red-600" />,
     title: "Real-time Updates",
     description:
       "Stay informed with live flight statuses, gate changes, and weather alerts.",
@@ -48,7 +48,7 @@ const featuresData = [
 
 const Feature = () => {
   return (
-    <div className="flex flex-col items-center text-center my-16 px-4">
+    <div className="flex flex-col items-center text-center my-16 px-4 mb-30">
       <h2 className="text-4xl font-bold mb-10">Why Choose TripSaarthi?</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-full max-w-7xl">

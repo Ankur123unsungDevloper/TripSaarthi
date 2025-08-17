@@ -29,7 +29,7 @@ const logos = [
 
 const Partner = () => {
   return ( 
-    <div className="pt-16 flex justify-center items-center flex-col mb-20">
+    <div className="pt-16 flex justify-center items-center flex-col mb-30">
       <div className="text-4xl w-3/4 text-center xl:text-5xl font-medium">
         Our Trusted Partners
       </div>
