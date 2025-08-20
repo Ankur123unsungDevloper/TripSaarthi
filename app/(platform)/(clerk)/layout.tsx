@@ -1,11 +1,30 @@
-import React from 'react';
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+"use client";
 
-const ClerkLayout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+import React, {
+  useEffect,
+  useState
+} from "react";
+
+const ClerkLayout = ({ children }: { children: React.ReactNode }) => {
+  const [bgImage, setBgImage] = useState("");
+
+  useEffect(() => {
+    async function fetchImage() {
+      try {
+        const response = await fetch(
+          `https://api.unsplash.com/photos/random?query=travel,adventure,nature&client_id=${process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY}`
+        );
+        const data = await response.json();
+        setBgImage(data.urls?.regular);
+      } catch (error) {
+        console.error("Error fetching Unsplash image:", error);
+      }
+    }
+
+    fetchImage();
+  }, []);
+
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
       {/* Left side: Authentication form and text content */}
@@ -22,30 +41,30 @@ const ClerkLayout = ({
           {children}
         </div>
       </div>
-      
-      {/* Right side: The travel-themed signature design */}
+
+      {/* Right side: Travel-themed random background */}
       <div className="h-screen hidden lg:flex items-center justify-center relative overflow-hidden">
-        <Image
-          src={`https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1080&q=80&random=${Math.random()}`}
-          alt="Random travel"
-          fill
-          className="object-cover"
-          priority
-        />
+        {bgImage && (
+          <img
+            src={bgImage}
+            alt="Random travel"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
+
+        {/* Subtle gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
 
-        {/* Brand logo/text overlay on the image */}
+        {/* Brand overlay */}
         <div className="relative text-white z-10 text-center p-8 bg-gray-900/30 rounded-lg backdrop-blur-sm">
           <h2 className="text-4xl font-extrabold tracking-widest">
             TripSaarthi
           </h2>
-          <p className="mt-2 text-lg italic">
-            Your journey begins here.
-          </p>
+          <p className="mt-2 text-lg italic">Your journey begins here.</p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ClerkLayout;
