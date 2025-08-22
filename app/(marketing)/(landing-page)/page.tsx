@@ -5,7 +5,7 @@ import Heroine from "./_components/heroine";
 import IgnoreTools from "./_components/ignoretools";
 import Partner from "./_components/partner";
 import Services from "./_components/services";
-import Testimonial from "./_components/testimonal";
+import Testimonial from "./_components/testimonial";
 
 const LandingPage = () => {
   return (
